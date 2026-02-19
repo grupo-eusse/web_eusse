@@ -1,3 +1,4 @@
+import AboutSection from "@/ui/components/about_us";
 import HeroCarousel from "@/ui/components/hero_carousel";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <main className="flex-1">
       <div className="bg-brand-50 text-brand-900">
         <HeroCarousel />
+        <AboutSection />
       </div>
     </main>
   );
