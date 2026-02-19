@@ -33,3 +33,20 @@
 :root {
   color-scheme: light;
 }
+
+.magnify-container {
+  isolation: isolate;
+}
+
+.magnify-container .magnify-glass {
+  z-index: 2147483647 !important;
+}
+
+/* Framer whileInView can stay at opacity 0 in the zoom clone because it is rendered in a second tree. */
+.magnify-zoom .magnify-disable-reveal [style*="opacity: 0"] {
+  opacity: 1 !important;
+}
+
+.magnify-zoom .magnify-disable-reveal [style*="translateY"] {
+  transform: none !important;
+}

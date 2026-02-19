@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/ui/components/navbar";
-import Footer from "@/ui/components/footer";
+import MagnifyShell from "@/ui/components/Magnify_comps/magnify-shell";
+import { MagnifyProvider } from "@/ui/components/Magnify_comps/magnify-provider";
+import { montserrat } from "@/ui/fonts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,11 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${montserrat.className} antialiased min-h-screen flex flex-col bg-brand-50`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <MagnifyProvider>
+          <MagnifyShell>{children}</MagnifyShell>
+        </MagnifyProvider>
       </body>
     </html>
   );

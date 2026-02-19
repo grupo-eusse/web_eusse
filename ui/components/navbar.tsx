@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import BurgerBtn from "./burguer_btn";
+import { useMagnify } from './Magnify_comps/magnify-provider';
 
 const LINKS = [
   { href: "/", label: "Inicio" },
@@ -14,7 +15,7 @@ const LINKS = [
 export default function Navbar() {
   const pathname = usePathname();
   const [companiesInView, setCompaniesInView] = useState(false);
-
+  const { isMagnifyEnabled, toggleMagnify } = useMagnify();
   /*
     Esta función tiene el fin de remarcar en el navbar el enlace de "Compañías del Grupo" 
     cuando el usuario esté viendo esa sección en la página de inicio. Si el usuario no está 
@@ -93,6 +94,20 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
+        <button
+          type="button"
+          onClick={toggleMagnify}
+          aria-pressed={isMagnifyEnabled}
+          aria-label={isMagnifyEnabled ? "Desactivar lupa" : "Activar lupa"}
+          className={`hidden md:inline-flex ml-3 h-10 w-10 items-center justify-center rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 ${
+            isMagnifyEnabled
+              ? "border-accent bg-accent/20 text-brand-900"
+              : "border-brand-900/20 text-brand-900 hover:border-accent/60 hover:text-accent"
+          }`}
+        >
+          <img src="/svg/icono_lupa.svg" alt="" className="h-5 w-5" />
+        </button>
         <div className="md:hidden ml-2 shrink-0">
           <BurgerBtn links={LINKS} />
         </div>

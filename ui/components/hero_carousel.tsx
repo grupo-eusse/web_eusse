@@ -1,9 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { satisfy, montserratBold } from '@/ui/fonts';
+import { useMagnify } from './Magnify_comps/magnify-provider';
 
 const slides = [
   {
@@ -21,15 +22,34 @@ const slides = [
 ];
 
 export default function HeroCarousel() {
-  const [current, setCurrent] = useState(0);
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [isZoomClone, setIsZoomClone] = useState<boolean | null>(null);
+  const { heroSlideIndex, setHeroSlideIndex } = useMagnify();
+  const current = ((heroSlideIndex % slides.length) + slides.length) % slides.length;
 
   useEffect(() => {
-    const id = setInterval(() => setCurrent((p) => (p + 1) % slides.length), 5000);
-    return () => clearInterval(id);
+    setIsZoomClone(Boolean(sectionRef.current?.closest('.magnify-zoom')));
   }, []);
 
+  useEffect(() => {
+    if (isZoomClone !== false) {
+      return;
+    }
+
+    const id = setInterval(
+      () => setHeroSlideIndex((previousSlide) => (previousSlide + 1) % slides.length),
+      5000,
+    );
+
+    return () => clearInterval(id);
+  }, [isZoomClone, setHeroSlideIndex]);
+
   return (
-    <section id="home" className="relative h-[50vh]  md:h-[90vh] overflow-hidden">
+    <section
+      ref={sectionRef}
+      id="home"
+      className="relative h-[50vh]  md:h-[90vh] overflow-hidden"
+    >
       {slides.map((s, i) => (
         <div
           key={i}
@@ -90,7 +110,7 @@ export default function HeroCarousel() {
           <button
             key={i}
             aria-label={`Ir al slide ${i + 1}`}
-            onClick={() => setCurrent(i)}
+            onClick={() => setHeroSlideIndex(i)}
             className={`h-3 rounded-full transition-[width,background-color] duration-300 ${
               i === current ? 'w-8 bg-brand-50' : 'w-3 bg-brand-50/60'
             }`}
