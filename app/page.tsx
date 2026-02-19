@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div className="bg-brand-50 text-brand-900">
-      
-    </div>
+    <main className="flex-1">
+      <div></div>
+    </main>
   );
 }
