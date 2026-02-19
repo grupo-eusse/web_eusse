@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import BurgerBtn from "./burguer_btn";
 
 const LINKS = [
   { href: "/", label: "Inicio" },
@@ -92,6 +93,9 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <div className="md:hidden ml-2 shrink-0">
+          <BurgerBtn links={LINKS} />
+        </div>
       </nav>
     </header>
   );
