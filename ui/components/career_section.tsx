@@ -53,7 +53,7 @@ export default function CareersSection() {
           fill
           className="md:hidden object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#003366]/95 via-[#003366]/85 to-[#1CA9C9]/80" />
+        <div className="absolute inset-0 bg-linear-to-r from-[#003366]/95 via-[#003366]/85 to-[#1CA9C9]/80" />
       </div>
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
