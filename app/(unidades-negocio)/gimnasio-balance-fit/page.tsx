@@ -3,6 +3,8 @@ import { montserrat, montserratBold } from "@/ui/fonts";
 import GymClassCard from "@/ui/components/Companies/gym_class_card";
 import GymMembershipCard from "@/ui/components/Companies/gym_membership_card";
 
+import heroGym from "@/public/Heros/hero_gym.jpg";
+
 const MEMBERSHIPS = [
   {
     name: "Mensualidad Individual",
@@ -157,11 +159,13 @@ export default function GimnasioBalanceFitPage() {
       {/* Hero */}
       <section className="relative h-[60vh] overflow-hidden">
         <Image
-          src="/Heros/hero_gym.jpg"
+          src={heroGym}
           alt="Gimnasio Balance Fit - Entrena con propósito"
           fill
           className="object-cover"
           priority
+          placeholder="blur"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-linear-to-b from-brand-900/70 via-brand-800/60 to-brand-600/50" />
         <div className="relative mx-auto flex h-full max-w-6xl flex-col items-center justify-center gap-6 px-4 text-center text-brand-50 md:items-start md:text-left">

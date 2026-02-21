@@ -36,6 +36,7 @@ export default function CompanyCardGrid({ companies }: { companies: Company[] })
                 src={company.logo}
                 alt={company.title}
                 fill
+                sizes="(max-width: 768px) 100vw, 320px"
                 className="object-contain object-center"
               />
             </div>

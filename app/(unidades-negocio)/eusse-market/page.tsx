@@ -3,6 +3,8 @@ import { montserrat, montserratBold } from "@/ui/fonts";
 import PromoCarousel from "@/ui/components/Companies/promo_carousel";
 import MapComponent from "@/ui/components/Companies/map_component";
 
+import dronNaranjo from "@/public/dron_naranjo.jpg";
+
 const CTA_LINKS = [
   {
     href: "#promociones",
@@ -22,11 +24,13 @@ export default function EusseMarketPage() {
       {/* Hero */}
       <section className="relative h-[60vh] overflow-hidden">
         <Image
-          src="/dron_naranjo.jpg"
+          src={dronNaranjo}
           alt="Eusse Market - Conveniencia en tus estaciones"
           fill
           className="object-cover"
           priority
+          placeholder="blur"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-linear-to-b from-brand-900/70 via-brand-800/60 to-brand-600/50" />
         <div className="relative mx-auto flex h-full max-w-6xl flex-col items-center justify-center gap-6 px-4 text-center text-brand-50 md:items-start md:text-left">

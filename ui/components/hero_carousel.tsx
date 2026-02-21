@@ -6,17 +6,21 @@ import { motion } from 'framer-motion';
 import { satisfy, montserratBold } from '@/ui/fonts';
 import { useMagnify } from './Magnify_comps/magnify-provider';
 
+import mainNaranjo from '@/public/Heros/main_naranjo.jpg';
+import mainBarranca from '@/public/Heros/main_barranca.jpg';
+import mainGuapiles from '@/public/Heros/main_guapiles.jpg';
+
 const slides = [
   {
-    image: '/Heros/main_naranjo.jpg',
+    image: mainNaranjo,
     subtitle: 'Energía y confianza para cada kilómetro',
   },
   {
-    image: '/Heros/main_barranca.jpg',
+    image: mainBarranca,
     subtitle: 'Innovación que impulsa tu camino',
   },
   {
-    image: '/Heros/main_guapiles.jpg',
+    image: mainGuapiles,
     subtitle: 'Moviendo a Costa Rica con pasión',
   },
 ];
@@ -65,6 +69,7 @@ export default function HeroCarousel() {
               alt={s.subtitle}
               fill
               priority={i === 0}
+              placeholder="blur"
               sizes="100vw"
               className="object-cover"
             />

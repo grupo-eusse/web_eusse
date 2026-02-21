@@ -5,6 +5,8 @@ import PeddlerExplainer from "@/ui/components/Companies/peddler_explainer";
 import PeddlerOfferings from "@/ui/components/Companies/peddler_offerings";
 import PeddlerContact from "@/ui/components/Companies/peddler_contact";
 
+import dronNaranjo from "@/public/dron_naranjo.jpg";
+
 const HERO_CTAS = [
   { href: "#mapa-estaciones", label: "Explorar estaciones", style: "bg-brand-50 text-brand-900 hover:bg-brand-200" },
   { href: "#peddler",         label: "Ver Peddler",         style: "border border-brand-50/60 bg-transparent text-brand-50 hover:bg-brand-50/10" },
@@ -16,11 +18,13 @@ export default function Home() {
       {/* Hero */}
       <section className="relative h-[60vh] w-full overflow-hidden">
         <Image
-          src="/dron_naranjo.jpg"
+          src={dronNaranjo}
           alt="Combustible Eusse - Vista de una estación"
           fill
           className="object-cover"
           priority
+          placeholder="blur"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-linear-to-b from-brand-900/70 via-brand-800/60 to-brand-600/50" />
         <div className="relative mx-auto flex h-full max-w-6xl flex-col items-center justify-center gap-6 px-4 text-center text-brand-50 md:items-start md:text-left">

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroHorus from "@/public/Heros/hero_horus.jpg";
 
 const GALLERY = [
   {
@@ -24,10 +25,12 @@ export default function CentroDeportivoHorusPage() {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-linear-to-r from-brand-900/95 via-brand-800/80 to-brand-700/70" />
           <Image
-            src="/Heros/hero_horus.jpg"
+            src={heroHorus}
             alt="Centro Deportivo Horus"
             fill
             priority
+            placeholder="blur"
+            sizes="100vw"
             className="object-cover opacity-70"
           />
         </div>
