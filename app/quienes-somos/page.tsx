@@ -17,6 +17,7 @@ export default function Home() {
             fill
             className="object-cover"
             priority
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-linear-to-b from-brand-900/70 via-brand-800/60 to-brand-600/50" />
           <div className="relative mx-auto flex h-full max-w-5xl flex-col items-center justify-center gap-6 px-6 text-center text-brand-50 md:items-start md:text-left">

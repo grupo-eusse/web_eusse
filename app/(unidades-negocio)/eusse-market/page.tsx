@@ -29,6 +29,7 @@ export default function EusseMarketPage() {
           fill
           className="object-cover"
           priority
+          fetchPriority="high"
           placeholder="blur"
           sizes="100vw"
         />

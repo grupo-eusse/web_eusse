@@ -69,6 +69,7 @@ export default function HeroCarousel() {
               alt={s.subtitle}
               fill
               priority={i === 0}
+              fetchPriority={i === 0 ? "high" : undefined}
               placeholder="blur"
               sizes="100vw"
               className="object-cover"

@@ -29,6 +29,7 @@ export default function CentroDeportivoHorusPage() {
             alt="Centro Deportivo Horus"
             fill
             priority
+            fetchPriority="high"
             placeholder="blur"
             sizes="100vw"
             className="object-cover opacity-70"
