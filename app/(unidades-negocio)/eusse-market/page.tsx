@@ -3,7 +3,7 @@ import { montserrat, montserratBold } from "@/ui/fonts";
 import PromoCarousel from "@/ui/components/Companies/promo_carousel";
 import MapComponent from "@/ui/components/Companies/map_component";
 
-import dronNaranjo from "@/public/dron_naranjo.jpg";
+import dronNaranjo from "@/public/dron_naranjo.webp";
 
 const CTA_LINKS = [
   {

@@ -5,7 +5,7 @@ import PeddlerExplainer from "@/ui/components/Companies/peddler_explainer";
 import PeddlerOfferings from "@/ui/components/Companies/peddler_offerings";
 import PeddlerContact from "@/ui/components/Companies/peddler_contact";
 
-import dronNaranjo from "@/public/dron_naranjo.jpg";
+import dronNaranjo from "@/public/dron_naranjo.webp";
 
 const HERO_CTAS = [
   { href: "#mapa-estaciones", label: "Explorar estaciones", style: "bg-brand-50 text-brand-900 hover:bg-brand-200" },

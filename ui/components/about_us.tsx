@@ -110,7 +110,7 @@ export default function AboutSection() {
         >
           <VideoSection
             videoId="8y6n12TkNYU"
-            posterSrc="/Video_Covers/video_cover1.jpg"
+            posterSrc="/Video_Covers/video_cover1.webp"
             className="mx-auto mt-6 w-full max-w-4xl"
           />
         </motion.div>

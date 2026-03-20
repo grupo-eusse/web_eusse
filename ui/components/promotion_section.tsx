@@ -53,7 +53,7 @@ export default function PromotionsSection() {
               <div className="absolute -inset-4 bg-linear-to-r from-[#1CA9C9] to-[#003366] rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300" />
               <div className="relative rounded-2xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-[1.03]">
                 <Image
-                  src="/promocion-eusse.jpg"
+                  src="/promocion-eusse.webp"
                   alt="Promoción Eusse – gana un SWM Golf 2025"
                   width={1200}
                   height={800}

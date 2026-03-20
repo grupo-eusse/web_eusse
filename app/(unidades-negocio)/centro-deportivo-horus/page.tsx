@@ -1,17 +1,17 @@
 import Image from "next/image";
-import heroHorus from "@/public/Heros/hero_horus.jpg";
+import heroHorus from "@/public/Heros/hero_horus.webp";
 
 const GALLERY = [
   {
-    src: "/gym/gym1.jpg",
+    src: "/gym/gym1.webp",
     caption: "Cancha techada con césped sintético de última generación.",
   },
   {
-    src: "/gym/gym2.jpg",
+    src: "/gym/gym2.webp",
     caption: "Zona de hidratación y descanso para equipos completos.",
   },
   {
-    src: "/gym/gym3.jpg",
+    src: "/gym/gym3.webp",
     caption: "Iluminación LED para partidos nocturnos sin sombras.",
   },
 ] as const;

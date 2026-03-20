@@ -18,7 +18,7 @@ export default function EmpleoPage() {
       {/* Hero */}
       <section className="relative h-[60vh] overflow-hidden">
         <Image
-          src="/Heros/eusse_empleo.jpg"
+          src="/Heros/eusse_empleo.webp"
           alt="Personas trabajando en Eusse"
           fill
           className="object-cover"
@@ -49,7 +49,7 @@ export default function EmpleoPage() {
           <div className="mt-8">
             <VideoSection
               videoId="8y6n12TkNYU"
-              posterSrc="/Video_Covers/video_cover3.jpg"
+              posterSrc="/Video_Covers/video_cover3.webp"
               className="mx-auto w-full max-w-4xl"
             />
           </div>

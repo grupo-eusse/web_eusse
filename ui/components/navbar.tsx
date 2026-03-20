@@ -66,12 +66,12 @@ export default function Navbar() {
           className="h-full shrink-0 sm:shrink basis-200px sm:basis-240px md:basis-200px"
         >
           <img
-            src="/logo-eusse-completo.png"
+            src="/logo-eusse-completo.webp"
             alt="Eusse"
             className="h-full max-h-14 w-auto object-contain transition-[height] duration-200 hidden sm:block"
           />
           <img
-            src="/logo-eusse-reducido.png"
+            src="/logo-eusse-reducido.webp"
             alt="Eusse"
             className="h-full max-h-14 w-auto object-contain transition-[height] duration-200 block sm:hidden"
           />

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const COMPANIES = [
   {
-    logo: "/logo-eusse-reducido.png",
+    logo: "/logo-eusse-reducido.webp",
     title: "Combustible Eusse",
     href: "/combustible-eusse",
     phone: "+506 8888-8888",

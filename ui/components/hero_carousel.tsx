@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 import { satisfy, montserratBold } from '@/ui/fonts';
 import { useMagnify } from './Magnify_comps/magnify-provider';
 
-import mainNaranjo from '@/public/Heros/main_naranjo.jpg';
-import mainBarranca from '@/public/Heros/main_barranca.jpg';
-import mainGuapiles from '@/public/Heros/main_guapiles.jpg';
+import mainNaranjo from '@/public/Heros/main_naranjo.webp';
+import mainBarranca from '@/public/Heros/main_barranca.webp';
+import mainGuapiles from '@/public/Heros/main_guapiles.webp';
 
 const slides = [
   {

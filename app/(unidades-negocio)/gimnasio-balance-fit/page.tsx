@@ -3,7 +3,7 @@ import { montserrat, montserratBold } from "@/ui/fonts";
 import GymClassCard from "@/ui/components/Companies/gym_class_card";
 import GymMembershipCard from "@/ui/components/Companies/gym_membership_card";
 
-import heroGym from "@/public/Heros/hero_gym.jpg";
+import heroGym from "@/public/Heros/hero_gym.webp";
 
 const MEMBERSHIPS = [
   {
@@ -116,17 +116,17 @@ const MEMBERSHIP_INCLUDES = [
 
 const GALLERY_IMAGES = [
   {
-    src: "/gym/gym1.jpg",
+    src: "/gym/gym1.webp",
     alt: "Sala de entrenamiento funcional con equipo de Balance Fit",
     caption: "Entrenamientos funcionales con equipo de última generación",
   },
   {
-    src: "/gym/gym2.jpg",
+    src: "/gym/gym2.webp",
     alt: "Zona de pesas y cardio en Balance Fit",
     caption: "Áreas diferenciadas para fuerza, cardio y movilidad",
   },
   {
-    src: "/gym/gym3.jpg",
+    src: "/gym/gym3.webp",
     alt: "Coach guiando una sesión personalizada",
     caption: "Coaches certificados acompañándote en cada sesión",
   },

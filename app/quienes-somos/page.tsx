@@ -12,7 +12,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="relative h-[60vh] w-full">
           <Image
-            src="/dron_naranjo.jpg"
+            src="/dron_naranjo.webp"
             alt="Equipo Eusse en operaciones"
             fill
             className="object-cover"
@@ -48,7 +48,7 @@ export default function Home() {
           <div className="mt-8">
             <VideoSection
               videoId="8y6n12TkNYU"
-              posterSrc="/Video_Covers/video_cover2.jpg"
+              posterSrc="/Video_Covers/video_cover2.webp"
               className="mx-auto w-full max-w-4xl"
             />
           </div>

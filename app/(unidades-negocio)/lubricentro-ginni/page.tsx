@@ -3,44 +3,44 @@ import { montserrat, montserratBold } from "@/ui/fonts";
 import ServiceContactForm from "@/ui/components/Companies/service_contact_form";
 import ProductCarousel from "@/ui/components/Companies/product_carousel";
 
-import heroLubri from "@/public/Heros/hero_lubri.jpg";
+import heroLubri from "@/public/Heros/hero_lubri.webp";
 
 const SERVICES = [
   {
     title: "Cambio de aceite express",
     description: "Servicio completo con inspección de filtros, niveles y presión de llantas.",
     duration: "20 minutos",
-    imageSrc: "/servicio_lubri/serv_lubri1.jpg",
+    imageSrc: "/servicio_lubri/serv_lubri1.webp",
   },
   {
     title: "Mantenimiento preventivo",
     description: "Chequeo de fluidos, batería, frenos y limpieza de inyectores según el kilometraje.",
     duration: "45 minutos",
-    imageSrc: "/servicio_lubri/serv_lubri2.jpg",
+    imageSrc: "/servicio_lubri/serv_lubri2.webp",
   },
   {
     title: "Alineamiento y balanceo",
     description: "Tecnología laser para mantener la estabilidad y ahorro de combustible.",
     duration: "60 minutos",
-    imageSrc: "/servicio_lubri/serv_lubri3.jpg",
+    imageSrc: "/servicio_lubri/serv_lubri3.webp",
   },
   {
     title: "Diagnóstico computarizado",
     description: "Escaneo de fallas electrónicas con equipos de última generación.",
     duration: "30 minutos",
-    imageSrc: "/servicio_lubri/serv_lubri4.jpg",
+    imageSrc: "/servicio_lubri/serv_lubri4.webp",
   },
   {
     title: "Servicio de aire acondicionado",
     description: "Recarga de gas, revisión de fugas y limpieza del sistema.",
     duration: "50 minutos",
-    imageSrc: "/servicio_lubri/serv_lubri5.jpg",
+    imageSrc: "/servicio_lubri/serv_lubri5.webp",
   },
   {
     title: "Detailing interior express",
     description: "Limpieza profunda de cabina con productos hipoalergénicos.",
     duration: "40 minutos",
-    imageSrc: "/servicio_lubri/serv_lubri5.jpg",
+    imageSrc: "/servicio_lubri/serv_lubri5.webp",
   },
 ] as const;
 
