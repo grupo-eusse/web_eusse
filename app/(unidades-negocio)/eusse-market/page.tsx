@@ -63,7 +63,7 @@ export default function EusseMarketPage() {
         </div>
       </section>
 
-      {/* Promociones */}
+      {/* Promociones 
       <section id="promociones" className="bg-brand-200/40 py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mb-10 text-center">
@@ -75,6 +75,7 @@ export default function EusseMarketPage() {
           <PromoCarousel />
         </div>
       </section>
+      */}
 
       {/* Ubicaciones + Horario */}
       <section id="ubicaciones" className="bg-white py-16">

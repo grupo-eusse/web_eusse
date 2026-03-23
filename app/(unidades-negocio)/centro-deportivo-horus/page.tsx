@@ -3,16 +3,20 @@ import heroHorus from "@/public/Heros/hero_horus.webp";
 
 const GALLERY = [
   {
-    src: "/gym/gym1.webp",
-    caption: "Cancha techada con césped sintético de última generación.",
+    src: "/horus1.webp",
+    caption: "Cancha de fútbol 5 con césped sintético y líneas de juego impecables.",
   },
   {
-    src: "/gym/gym2.webp",
-    caption: "Zona de hidratación y descanso para equipos completos.",
+    src: "/horus2.webp",
+    caption: "Vista frontal de la cancha con portería reglamentaria y cerramiento perimetral.",
   },
   {
-    src: "/gym/gym3.webp",
-    caption: "Iluminación LED para partidos nocturnos sin sombras.",
+    src: "/horus3.webp",
+    caption: "Banquillos para jugadores y cuerpo técnico junto al terreno de juego.",
+  },
+  {
+    src: "/horus4.webp",
+    caption: "Área de servicios y vestidores ubicada al costado de la cancha.",
   },
 ] as const;
 
@@ -70,7 +74,7 @@ export default function CentroDeportivoHorusPage() {
             Espacios diseñados para que cada partido se sienta profesional.
           </p>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {GALLERY.map((item) => (
             <div
               key={item.caption}

@@ -7,6 +7,8 @@ import { Search } from "lucide-react";
 import BurgerBtn from "./burguer_btn";
 import { useMagnify } from './Magnify_comps/magnify-provider';
 
+const QUICKSTATION_LOGIN_URL = "https://quickstation.eusse.cr/login";
+
 const LINKS = [
   { href: "/", label: "Inicio" },
   { href: "/quienes-somos", label: "¿Quiénes somos?" },
@@ -104,6 +106,21 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
+        <a
+          href={QUICKSTATION_LOGIN_URL}
+          className="ml-3 shrink-0"
+          aria-label="Ir a QuickStation"
+        >
+          <Image
+            src="/logo-quick-station.png"
+            alt="QuickStation"
+            width={148}
+            height={40}
+            sizes="(max-width: 640px) 96px, 148px"
+            className="h-8 w-auto object-contain sm:h-10"
+          />
+        </a>
 
         <div className="group relative ml-3 hidden md:inline-flex">
           <button
