@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import VideoSection from "@/ui/components/video_section";
 
 const stats = [
-  { icon: Users, value: "500+", label: "Colaboradores", delay: 0.1 },
-  { icon: Award, value: "20+", label: "Años", delay: 0.2 },
-  { icon: Heart, value: "100K+", label: "Clientes", delay: 0.3 },
+  { icon: Users, value: "+200", label: "Colaboradores", delay: 0.1 },
+  { icon: Award, value: "+10", label: "Años", delay: 0.2 },
+  { icon: Heart, value: "1M+", label: "Clientes", delay: 0.3 },
 ];
 
 export default function AboutSection() {
@@ -79,7 +79,7 @@ export default function AboutSection() {
             brillante para todos.
           </motion.p>
 
-          {/* Stats 
+          {/* Stats*/} 
           <div className="mb-12 grid grid-cols-3 justify-items-center">
             {stats.map((s) => (
               <motion.div
@@ -99,7 +99,7 @@ export default function AboutSection() {
               </motion.div>
             ))}
           </div>
-          */}
+          
         </div>
 
         {/* Video */}
