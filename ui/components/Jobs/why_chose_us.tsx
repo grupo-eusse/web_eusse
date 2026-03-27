@@ -33,7 +33,7 @@ export function WhyChooseUs() {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2">
           {benefits.map(({ title, description, stat, statLabel }) => (
             <div
               key={title}
