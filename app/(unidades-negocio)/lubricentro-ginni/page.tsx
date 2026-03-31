@@ -9,8 +9,8 @@ import heroLubri from "@/public/Heros/hero_lubri.webp";
 import { FEATURED_SERVICES, SERVICE_GROUPS } from "./content.mjs";
 
 const SCHEDULE = [
-  { days: "Lunes a Viernes", hours: "7:00 a.m. - 6:00 p.m." },
-  { days: "Sabado", hours: "7:00 a.m. - 4:00 p.m." },
+  { days: "L-V", hours: "7:00 AM A 5:00PM" },
+  { days: "Sábado", hours: "7:00 AM A 2:00PM" },
   { days: "Domingo", hours: "Cerrado" },
 ] as const;
 
