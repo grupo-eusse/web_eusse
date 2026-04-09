@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const COMPANIES = [
   {
-    logo: "/logo-eusse-reducido.webp",
+    logo: "/logo-eusse-reducido.png",
     title: "Combustible Eusse",
     href: "/combustible-eusse",
     descriptor: "Abastecimiento confiable para tu operacion",
@@ -17,7 +17,7 @@ const COMPANIES = [
     descriptor: "Mantenimiento y lubricacion especializada",
   },
   {
-    logo: "/logos/logo-eusse-market.jpg",
+    logo: "/logos/logo_minimarket_nuevo.jpeg",
     title: "MiniMarket Eusse",
     href: "/eusse-market",
     descriptor: "Compra rapida y conveniente en ruta",

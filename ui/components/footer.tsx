@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="bg-[#003366] text-white py-4 px-6 md:px-12">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <Image
-          src="/logo-eusse-reducido.webp"
+          src="/logo-eusse-reducido.png"
           alt="Grupo Eusse"
           width={80}
           height={40}

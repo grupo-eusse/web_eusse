@@ -78,7 +78,7 @@ export default function Navbar() {
             className="h-full max-h-14 w-auto object-contain transition-[height] duration-200 hidden sm:block"
           />
           <Image
-            src="/logo-eusse-reducido.webp"
+            src="/logo-eusse-reducido.png"
             alt="Eusse"
             width={80}
             height={56}
