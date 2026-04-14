@@ -102,7 +102,7 @@ export default function CareersSection() {
           </div>
 
           <motion.a
-            href="https://empleo.eusse.cr/"
+            href="https://empleo.grupoeusse.com/"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
