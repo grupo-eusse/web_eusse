@@ -19,7 +19,7 @@ export default function Home() {
     <main className="flex-1 bg-brand-50 text-brand-900">
         <HeroCarousel />
         <AboutSection />
-        <PromotionsSection />
+        {/*<PromotionsSection />*/}
         <CompanySection />
         <CareersSection />
     </main>
